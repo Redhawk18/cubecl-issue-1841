@@ -1,0 +1,13 @@
+[package]
+name = "cubecl-cube-fn-name-clash"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cubecl = { version = "0.11.0", features = ["cpu"] }
+
+[features]
+# Enables a `#[cube] fn` defined next to a module with the same name.
+definition_clash = []
+# Enables importing a `#[cube] fn` into a scope that has a module with the same name.
+import_clash = []
